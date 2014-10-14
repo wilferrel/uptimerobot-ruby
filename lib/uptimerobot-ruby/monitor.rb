@@ -4,6 +4,7 @@ module UptimeRobot
       @id = params[:id]
       @name = params[:name]
       @url = params[:url]
+      @monitors= params[:monitors]
     end
 
     def self.create(params)

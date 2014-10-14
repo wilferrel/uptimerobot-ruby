@@ -3,6 +3,7 @@ module UptimeRobot
     PARAMS = {
       :name => :monitorFriendlyName,
       :url => :monitorURL,
+      :monitors => :monitorsToCheck,
     }
 
     def self.api_key=(key)

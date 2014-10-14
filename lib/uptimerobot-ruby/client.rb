@@ -16,7 +16,7 @@ module UptimeRobot
     def self.base_params
       if @api_key && !@monitors
         {:apiKey => @api_key, :format => "json", :noJsonCallback => 1, :monitorType => 1}
-      if @api_key && @monitors
+      elsif @api_key && @monitors
           {:apiKey => @api_key, :format => "json", :noJsonCallback => 1, :monitorType => 1 , :monitors =>@monitors}
       else
         raise UptimeRobot::RequestError.new(100, "apiKey not mentioned")

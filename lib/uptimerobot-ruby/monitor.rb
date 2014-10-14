@@ -14,5 +14,8 @@ module UptimeRobot
     def self.post(params)
       UptimeRobot::Client.request("/newMonitor", params)
     end
+    def self.getMonitors(params)
+      UptimeRobot::Client.request("/getMonitors", params)
+    end
   end
 end
